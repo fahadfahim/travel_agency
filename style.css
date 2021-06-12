@@ -671,7 +671,9 @@ td a {
   -ms-user-select: none;
   user-select: none;
 }
-
+.sort_picker .containers {
+  margin-right: 40px;
+}
 /* Hide the browser's default checkbox */
 
 .containers input {
@@ -685,7 +687,7 @@ td a {
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 5px;
+  top: 2px;
   left: 0;
   height: 20px;
   width: 22px;
@@ -758,9 +760,24 @@ td a {
   background: #20a397;
   color: #fff;
 }
+
+.sort_picker {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sort_picker label {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 5px;
+}
 .type-sort {
-  display: flex;
-  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.type_sort_head h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3e3e3e;
+  margin-bottom: 10px;
 }
 
 /*hotel pak*/
@@ -888,4 +905,107 @@ a.htl-dtl-qute-btn {
 a.htl-dtl-view-btn {
   font-size: 14px;
   font-weight: 700;
+}
+
+.sort_picker div {
+  display: block;
+}
+.containers {
+  font-size: 14px;
+  color: #3e3e3e;
+}
+section.hld-dest {
+  margin-top: 25px;
+}
+.trending-hld-dest-head {
+  margin-bottom: 10px;
+}
+.trending-hld-dest-head h4 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #3e3e3e;
+  margin-left: 15px;
+}
+.trending-hld-dest-head span {
+  font-size: 10px;
+  background: #ee8701;
+  color: #3e3e3e;
+  padding: 5px;
+}
+.trending-hld-dest-head {
+  display: flex;
+  align-items: center;
+}
+.single-trnd-img img {
+  width: 165px;
+  height: 187px;
+}
+.trnd-det {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.trnd-head p {
+  font-size: 14px;
+  color: #3e3e3e;
+  padding: 0;
+  margin-bottom: -8px;
+}
+.trnd-head span {
+  font-size: x-small;
+  color: #b2b2b2;
+}
+.trnd-price span {
+  font-size: x-small;
+  color: #b2b2b2;
+}
+.trnd-price p {
+  font-size: 12px;
+}
+.trnd-price {
+  margin-top: -5px;
+}
+.top-travel {
+  margin-top: 30px;
+}
+.top-trvl-card {
+  width: 360px;
+}
+.top-travel-head h3 {
+  font-size: 20px;
+  font-weight: 900;
+  color: 900;
+}
+.top-travel-head span {
+  font-size: small;
+  color: #b2b2b2;
+}
+.top-trvl-img img {
+  width: 360px;
+  height: 142px;
+}
+.trvl-txt p {
+  font-size: 14px;
+  color: #3e3e3e;
+  text-align: justify;
+  font-weight: 900;
+}
+.trvl-read-more {
+  text-align: right;
+}
+.trvl-read-more a {
+  font-size: 14px;
+  color: #2196f3;
+  font-weight: 700;
+}
+.top-trvl-sc {
+  padding: 10px;
+  border: 1px solid #b2b2b2;
+}
+.top-travel-head {
+  margin-bottom: 15px;
+}
+
+.star .type-sort .containers i {
+  color: #ee8701;
 }

@@ -8,7 +8,10 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      />
         <link rel="stylesheet" href="style.css">
         <title>Hotel Management</title>
       </head>
@@ -165,30 +168,6 @@
         </div>
     </section>
 
-   <!-- <section class="exp-best-selling-pack">
-       <div class="container">
-           <div class="exp-best-sell">
-               <div class="exp-head">
-                <h3>Explore best selling package for </h3>
-               </div>
-               <label class="containers">International Destinations
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-              </label>
-              <label class="containers">Destinations within Asia
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-              </label>
-           </div>
-       </div>
-   </section>
-   <section class="best-sell-pak-card">
-       <div class="container">
-           <div class="row">
-
-           </div>
-       </div>
-   </section> -->
 
    <section class="exp-bst-pak">
     <div class="container">
@@ -212,6 +191,11 @@
            <div class="col-md-4 col-sm-12">
            <aside class="sort">
             <div class="type-sort">
+                <div class="type_sort_head">
+                    <h4>Type of Destination</h4>
+                    <hr>
+                </div>
+                <div class="sort_picker">
                 <label class="containers">India
                     <input type="checkbox" checked="checked">
                     <span class="checkmark"></span>
@@ -220,7 +204,209 @@
                     <input type="checkbox" checked="checked">
                     <span class="checkmark"></span>
                   </label>
+                </div>
             </div>
+
+            <div class="type-sort">
+                <div class="type_sort_head">
+                    <h4>Categories</h4>
+                    <hr>
+                </div>
+                <div class="sort_picker">
+                    <div>
+                <label class="containers">Honeymoon
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div>
+                  <label class="containers">Family
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div>
+                  <label class="containers">Friends/Group
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                </div>
+            </div>
+
+            <div class="type-sort">
+                <div class="type_sort_head">
+                    <h4>Duration (in Days)</h4>
+                    <hr>
+                </div>
+                <div class="sort_picker">
+                <label class="containers">1 to 3
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="containers">4 to 6
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="containers">7 to 9
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="containers">10 to 12
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="containers">13 or more
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+            </div>
+
+            <div class="type-sort">
+                <div class="type_sort_head">
+                    <h4>Budget Per Person (in Rs)</h4>
+                    <hr>
+                </div>
+                
+                <label class="containers">Less Than 10,000
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="containers">10,000 - 20,000 
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="containers">20,000 - 40,000
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="containers">40,000 - 60,000
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="containers">60,000 - 80,000
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="containers">Above 80,000
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                
+            </div>
+
+            <div class="star">
+
+                <div class="type-sort">
+                    <div class="type_sort_head">
+                        <h4>Hotel Star Rating</h4>
+                        <hr>
+                    </div>
+                    
+                    <label class="containers">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="containers">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="containers">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="containers">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                   
+                    
+                </div>
+            </div>
+
+            <div class="type-sort">
+                <div class="type_sort_head">
+                    <h4>Inclusions</h4>
+                    <hr>
+                </div>
+                <label class="containers">
+                    <i class="fas fa-concierge-bell"></i>
+                    Meals
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="containers">
+                    <i class="fas fa-car"></i>  
+                    Cab
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="containers">
+                    <i class="fas fa-bus-alt"></i>  
+                    Shared Coach
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+            </div>
+
+            <div class="type-sort">
+                <div class="type_sort_head">
+                    <h4>Activities</h4>
+                    <hr>
+                </div>
+
+                <label class="containers">
+                    <i class="fab fa-autoprefixer"></i>
+                    Adventure
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="containers">
+                    <i class="fas fa-mountain"></i>  
+                    Nature
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="containers">
+                    <i class="fas fa-mountain"></i>  
+                    Hill Station
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="containers">
+                    <i class="fas fa-praying-hands"></i> 
+                    Religious
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="containers">
+                    <i class="fas fa-swimmer"></i>
+                    Water Activities
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+            </div>
+            
            </aside>
         </div>
         <div class="col-md-8 col-sm-12">
@@ -354,6 +540,7 @@
                 </div>
             </div>
             </div>
+
             <div class="hotel-details">
                 <div class="htl-det-card">
                     <div class="htl-det row">
@@ -480,9 +667,9 @@
                       </div>
                   </div>
               </div>
-              </div>
+            </div>
 
-              <div class="hotel-details">
+            <div class="hotel-details">
                 <div class="htl-det-card">
                     <div class="htl-det row">
                         <div class="col-md-3">
@@ -608,15 +795,535 @@
                       </div>
                   </div>
               </div>
+            </div>
+            <div class="hotel-details">
+                <div class="htl-det-card">
+                    <div class="htl-det row">
+                        <div class="col-md-3">
+                          <div class="tor-img">
+                              <img src="/img/about/about1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="htl-det-head row">
+                              <div class="col-md-8">
+                                  <div class="pak-htl-head">
+                                      <h3>Exclusive Bali Honeymoon Tour Packages for a Memorable Vacay</h3>
+                                  </div>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="htl-pak-compare">
+                                      <label class="containers">
+                                          <p>Add to compare</p>
+                                          <input type="checkbox" checked="checked">
+                                          <span class="checkmark"></span>
+                                        </label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="htl-pak-duration">
+                              <span class="htl-pak-dd">7 Days & 6 Nights</span>
+                              <span class="custome">| Customizable</span>
+                          </div>
+                          <div class="htl-pak-price row">
+                              <div class="col-md-6">
+                                  <div class="htl-pak-tdi">
+                                      <div class="htl-pak-strt-txt">
+                                          <span class="strt">Starting from:</span>
+                                      </div>
+                                      <div class="htl-pak-dis">
+                                          <p>10% off</p>
+                                          <i class="fas fa-info-circle"></i>
+                                      </div>
+                                     
+                                  </div>
+                               
+                                  
+                                  <div class="p_p">
+                                      <div class="p_p_or">
+                                          <h4 class="ppt">$1000</h4>
+                                      </div>
+                                      <div class="bfr_p_p">
+                                          <span class="bfr_p">$1200</span>
+                                      </div>
+                                  </div>
+                                  <div class="people_room">
+                                      <span>Per Person on twin sharing</span>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="pak_feat">
+                                      <ul>
+                                          <li>Adventure</li>
+                                          <li>Watersports</li>
+                                          <li>Nature</li>
+                                          <li>Water Activities</li>
+                                          <li>Sightseeing</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="htl_offer row">
+                              <div class="col-md-7">
+                                  <div class="htl_pak_offer">
+                                      <div class="htl_include">
+                                          <p>Hotel included in package:</p>
+                                      </div>
+                                      <div class="htl_inp">
+                                          <label class="containers">
+                                              <p>4 Star</p>
+                                              <input type="checkbox" checked="checked">
+                                              <span class="checkmark"></span>
+                                            </label>
+                                      </div>
+                                  </div>
+                                  <span class="htl_city">Cities:
+                                      Kuta (4D) <i class="fas fa-long-arrow-alt-right"></i> Ubud (3D)</span>
+                              </div>
+                              <div class="col-md-5">
+                                  <div class="htl-off-txt">
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi adipisci, debitis beatae quam ad vel suscipit quo deleniti consectetur.</p>
+                                  </div>
+                              </div>
+                          </div>
+  
+                       
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="htl_prc_img row">
+                  <div class="col-md-6">
+                      <div class="all_prc_img">
+                      <div class="prc_img">
+                          <img src="/img/4-stars.svg" alt="">
+                          <span>Upto 4 Stars</span>
+                      </div>
+                      <div class="prc_img">
+                          <img src="/img/dinner.svg" alt="">
+                          <span>Dinner</span>
+                      </div>
+                      <div class="prc_img">
+                          <img src="/img/bank.svg" alt="">
+                          <span>Upto 4 Stars</span>
+                      </div>
+                  </div>
+                  </div>
+                 
+                  <div class="col-md-6">
+                      <div class="htl-dtl-all-btn">
+                          <div class="htl-dtl-view">
+                              <a href="
+                              " class="htl-dtl-view-btn">View Details</a>
+                          </div>
+                          <div class="htl-dtl-qute">
+                              <a href="" class="htl-dtl-qute-btn">Customize & get Quotes</a>
+                          </div>
+                      </div>
+                  </div>
               </div>
+            </div>
+
+            
+
+
+              
            
         </div>
        </div>
     </div>
    </section>
 
+   <section class="hld-dest">
+       <div class="container">
+           <div class="trending-hld-dest-head">
+               <span>TRENDING</span><h4>Holiday Destination</h4>
+           </div>
+           <div class="row">
+               <div class="col-md-2 col-sm-12">
+                <div class="trnd-hld-dest">
+                    <div class="single-trnd">
+                        <div class="single-trnd-img">
+                            <img src="/img/destination7.jpg" alt="">
+                        </div>
+                        <div class="trnd-det">
+                            <div class="trnd-head">
+                                <p>Andaman</p>
+                                <span>103+ packages</span>
+                            </div>
+                            <div class="trnd-price">
+                                <span>Starting from</span>
+                                <p>$500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-2 col-sm-12">
+                <div class="trnd-hld-dest">
+                    <div class="single-trnd">
+                        <div class="single-trnd-img">
+                            <img src="/img/about/about4.jpg" alt="">
+                        </div>
+                        <div class="trnd-det">
+                            <div class="trnd-head">
+                                <p>Andaman</p>
+                                <span>103+ packages</span>
+                            </div>
+                            <div class="trnd-price">
+                                <span>Starting from</span>
+                                <p>$500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-2 col-sm-12">
+                <div class="trnd-hld-dest">
+                    <div class="single-trnd">
+                        <div class="single-trnd-img">
+                            <img src="/img/about/about2.jpg" alt="">
+                        </div>
+                        <div class="trnd-det">
+                            <div class="trnd-head">
+                                <p>Andaman</p>
+                                <span>103+ packages</span>
+                            </div>
+                            <div class="trnd-price">
+                                <span>Starting from</span>
+                                <p>$500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-2 col-sm-12">
+                <div class="trnd-hld-dest">
+                    <div class="single-trnd">
+                        <div class="single-trnd-img">
+                            <img src="/img/about/about1.jpg" alt="">
+                        </div>
+                        <div class="trnd-det">
+                            <div class="trnd-head">
+                                <p>Andaman</p>
+                                <span>103+ packages</span>
+                            </div>
+                            <div class="trnd-price">
+                                <span>Starting from</span>
+                                <p>$500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-2 col-sm-12">
+                <div class="trnd-hld-dest">
+                    <div class="single-trnd">
+                        <div class="single-trnd-img">
+                            <img src="/img/destination9.jpg" alt="">
+                        </div>
+                        <div class="trnd-det">
+                            <div class="trnd-head">
+                                <p>Andaman</p>
+                                <span>103+ packages</span>
+                            </div>
+                            <div class="trnd-price">
+                                <span>Starting from</span>
+                                <p>$500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-2 col-sm-12">
+                <div class="trnd-hld-dest">
+                    <div class="single-trnd">
+                        <div class="single-trnd-img">
+                            <img src="/img/destination8.jpg" alt="">
+                        </div>
+                        <div class="trnd-det">
+                            <div class="trnd-head">
+                                <p>Andaman</p>
+                                <span>103+ packages</span>
+                            </div>
+                            <div class="trnd-price">
+                                <span>Starting from</span>
+                                <p>$500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+           </div>
+           
+       </div>
+   </section>
+
+   <section class="top-travel">
+       <div class="container">
+           <div class="top-travel-head">
+               <h3>Top Travel Blogs</h3>
+               <span>They Traveled. They Experienced. They Shared.</span>
+           </div>
+
+ <!-- Swiper -->
+ <div class="swiper-container myAnotherSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <div class="top-trvl-card">
+        <div class="top-trvl-img">
+            <img src="/img/bl1.jpg" alt="">
+        </div>
+         <div class="top-trvl-sc">
+
+             <div class="top-trvl-txt">
+                 <div class="trvl-txt">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, Non quod accusamus similique.</p>
+                 </div>
+             </div>
+             <div class="trvl-read-more">
+                 <a href="">Read More</a>
+             </div>
+         </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="top-trvl-card">
+        <div class="top-trvl-img">
+            <img src="/img/bl1.jpg" alt="">
+        </div>
+         <div class="top-trvl-sc">
+
+             <div class="top-trvl-txt">
+                 <div class="trvl-txt">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, Non quod accusamus similique.</p>
+                 </div>
+             </div>
+             <div class="trvl-read-more">
+                 <a href="">Read More</a>
+             </div>
+         </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="top-trvl-card">
+        <div class="top-trvl-img">
+            <img src="/img/bl1.jpg" alt="">
+        </div>
+         <div class="top-trvl-sc">
+
+             <div class="top-trvl-txt">
+                 <div class="trvl-txt">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, Non quod accusamus similique.</p>
+                 </div>
+             </div>
+             <div class="trvl-read-more">
+                 <a href="">Read More</a>
+             </div>
+         </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="top-trvl-card">
+        <div class="top-trvl-img">
+            <img src="/img/bl1.jpg" alt="">
+        </div>
+         <div class="top-trvl-sc">
+
+             <div class="top-trvl-txt">
+                 <div class="trvl-txt">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, Non quod accusamus similique.</p>
+                 </div>
+             </div>
+             <div class="trvl-read-more">
+                 <a href="">Read More</a>
+             </div>
+         </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="top-trvl-card">
+        <div class="top-trvl-img">
+            <img src="/img/bl1.jpg" alt="">
+        </div>
+         <div class="top-trvl-sc">
+
+             <div class="top-trvl-txt">
+                 <div class="trvl-txt">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, Non quod accusamus similique.</p>
+                 </div>
+             </div>
+             <div class="trvl-read-more">
+                 <a href="">Read More</a>
+             </div>
+         </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="top-trvl-card">
+        <div class="top-trvl-img">
+            <img src="/img/bl1.jpg" alt="">
+        </div>
+         <div class="top-trvl-sc">
+
+             <div class="top-trvl-txt">
+                 <div class="trvl-txt">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, Non quod accusamus similique.</p>
+                 </div>
+             </div>
+             <div class="trvl-read-more">
+                 <a href="">Read More</a>
+             </div>
+         </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="top-trvl-card">
+        <div class="top-trvl-img">
+            <img src="/img/bl1.jpg" alt="">
+        </div>
+         <div class="top-trvl-sc">
+
+             <div class="top-trvl-txt">
+                 <div class="trvl-txt">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, Non quod accusamus similique.</p>
+                 </div>
+             </div>
+             <div class="trvl-read-more">
+                 <a href="">Read More</a>
+             </div>
+         </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="top-trvl-card">
+        <div class="top-trvl-img">
+            <img src="/img/bl1.jpg" alt="">
+        </div>
+         <div class="top-trvl-sc">
+
+             <div class="top-trvl-txt">
+                 <div class="trvl-txt">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, Non quod accusamus similique.</p>
+                 </div>
+             </div>
+             <div class="trvl-read-more">
+                 <a href="">Read More</a>
+             </div>
+         </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="top-trvl-card">
+        <div class="top-trvl-img">
+            <img src="/img/bl1.jpg" alt="">
+        </div>
+         <div class="top-trvl-sc">
+
+             <div class="top-trvl-txt">
+                 <div class="trvl-txt">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, Non quod accusamus similique.</p>
+                 </div>
+             </div>
+             <div class="trvl-read-more">
+                 <a href="">Read More</a>
+             </div>
+         </div>
+    </div></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+
+           <!-- <div class="top-trvl-card">
+               <div class="top-trvl-img">
+                   <img src="/img/bl1.jpg" alt="">
+               </div>
+                <div class="top-trvl-sc">
+
+                    <div class="top-trvl-txt">
+                        <div class="trvl-txt">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, Non quod accusamus similique.</p>
+                        </div>
+                    </div>
+                    <div class="trvl-read-more">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+           </div> -->
+       </div>
+   </section>
+
+   <footer class="footer">
+    <div class="footer-area">
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <div class="footer-logo">
+                    <img src="/img/logo white.png" alt="">
+                </div>
+                <div class="footer-details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis magnam nam, cumque excepturi delectus commodi veniam distinctio voluptate debitis non!</p>
+                </div>
+                <div class="footer-social">
+                    <span><i class="fab fa-facebook"></i></span>
+                    <span><i class="fab fa-twitter"></i></span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="foot-cnt">
+                    <div class="foot-cnt-head">
+                        <h3>Contact Us</h3>
+                        <hr>
+                    </div>
+                    <p><i class="fas fa-map-marker-alt"></i>Lorem ipsum dolor sit amet.</p>
+                    <p><i class="fas fa-envelope-square"></i>tripx@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i>+8801700000005</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="quick-link">
+                    <div class="quick-link-head">
+                        <h3>Quick Link</h3>
+                        <hr>
+                    </div>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Destination</a></li>
+                        <li><a href="">Tours</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="gallery-head">
+                    <h3>Gallery</h3>
+                    <hr>
+                </div>
+                <div class="gallery">
+                    <img src="/img/about/about1.jpg" alt="">
+                    <img src="/img/about/about2.jpg" alt="">
+                    <img src="/img/about/about3.jpg" alt="">
+                    <img src="/img/about/about4.jpg" alt="">
+                    <img src="/img/about/about5.jpg" alt="">
+                    <img src="/img/about/about4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <div class= "res">
+           <p>All right Reserve by &copy; PlayWay It</p>
+        </div>
+    </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".myAnotherSwiper", {
+          cssMode: true,
+          slidesPerView: 3,
+        spaceBetween: 30,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+
 </body>
 </html>
